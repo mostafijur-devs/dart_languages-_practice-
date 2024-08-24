@@ -1,3 +1,33 @@
+void main() {
+  // print('${speedTest(75, 50)} ms^-1'); //speedTest function call
+  // print('');
+  // print(register(
+  //     email: "polok@fh.com",
+  //     password: '4774747',
+  //     confirmPassword: '6473738jdhn',
+  //     firstName: 'Mostafijur',
+  //     lastName: 'Rhaman'));
+  // print('');
+  // print(getSalary(empName: 'Mostak Ahamed', baseSalary: 20000, grossSale: 100000, allowance: 500 ));
+  // print('');
+  // print(getColor(red: true, green: true, blue: false));
+  print(makeCityUppercase([
+    'Dhaka',
+    'mirpur',
+    'dhanmondi',
+    'rajshahi',
+    'borisal',
+    'bogura',
+    'jessore'
+  ], (String cityName) {
+    print(cityName.toUpperCase());
+  }));
+}
+
+
+
+
+
 // Create a function speedTest that takes two Positional Optional arguments
 double speedTest(int totalDistance, int totalTime) {
   double result = totalDistance / (totalTime / 60);
@@ -54,21 +84,4 @@ getColor({required bool red, required bool green, required bool blue}){
 //Create a function makeCityUppercase that takes a list nList of 10 cities (all in small letter) as the first argument and a function fn as the second argument which receives a String (Hint: Function(String) fn).
 makeCityUppercase(List<String> nList, Function(String) fn){
   nList.forEach((cityName)=>fn(cityName));
-}
-void main() {
-  // print('${speedTest(75, 50)} ms^-1'); //speedTest function call
-  // print('');
-  // print(register(
-  //     email: "polok@fh.com",
-  //     password: '4774747',
-  //     confirmPassword: '6473738jdhn',
-  //     firstName: 'Mostafijur',
-  //     lastName: 'Rhaman'));
-  // print('');
-  // print(getSalary(empName: 'Mostak Ahamed', baseSalary: 20000, grossSale: 100000, allowance: 500 ));
-  // print('');
-  // print(getColor(red: true, green: true, blue: false));
-  print(makeCityUppercase(['Dhaka','mirpur','dhanmondi','rajshahi','borisal','bogura','jessore'], (String cityName){
-    print(cityName.toUpperCase());
-  }));
 }
